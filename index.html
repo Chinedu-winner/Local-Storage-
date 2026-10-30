@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const student = 'Kikelomo'
+        localStorage.setItem('name', student)
+        localStorage.food = 'Rice'
+
+        const greatCities = ['Ogbomoso', 'new York', 'Tokyo', 'Milan', 'Abu Dhabi']
+        localStorage.setItem('cities', JSON.stringify(greatCities))
+        var Joy = {
+        height: '20',
+        hometown : 'Ibadan', 
+        educationalstatus: 'University of Ibadan', 
+        emailaccount:'paul35-abiyode@gmail.com', 
+        BestofFood: 'rice', 'fufu and vegetable soup': 'bean and bread', 
+        institution: 'Unversity of Ibadan',
+        church:  'Redeemed Christian Church  Of God',
+        }
+        localStorage.setItem('Joy', JSON.stringify(Joy))
+
+        const allPeople =[
+            {name: 'kikelola', age: 35}, 
+            {name: 'Tolu', age: 27}, 
+            {name: 'tolu', age: 57},
+            {name:'Bolu', age: 17}
+        ]
+        localStorage.setItem('people', JSON.stringify(allPeople))
+    </script>
+</body>
+</html>
